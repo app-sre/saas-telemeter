@@ -1,0 +1,11 @@
+services:
+- hash: 45552d0fa00f856ff1b564ab195349029e76dcc0
+  name: telemeter-server
+  path: /deploy/telemeter-server.yaml
+  url: https://github.com/openshift/telemeter
+  hash_length: 7
+  environments:
+  - name: production
+    parameters:
+      REPLICAS: 4
+      IMAGE: quay.io/app-sre/telemeter
