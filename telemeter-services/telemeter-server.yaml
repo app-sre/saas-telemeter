@@ -7,5 +7,4 @@ services:
   environments:
   - name: production
     parameters:
-      REPLICAS: 4
       IMAGE: quay.io/app-sre/telemeter
