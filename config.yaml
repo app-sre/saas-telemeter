@@ -1,0 +1,7 @@
+contexts:
+- data:
+    output_dir: telemeter-processed
+    services_dir: telemeter-services
+    templates_dir: telemeter-templates
+  name: telemeter
+current: telemeter
