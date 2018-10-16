@@ -1,11 +1,12 @@
 services:
 - hash: 2f87cf149520c93e8ab41778e18cea3e8fddb2f8
-  name: telemeter-server
-  path: /manifests/server/list.yaml
+  name: prometheus-operator
+  path: /manifests/prometheus/list.yaml
   url: https://github.com/openshift/telemeter
   hash_length: 7
   environments:
   - name: production
     parameters:
+      IMAGE_TAG: v2.3.2
       IMAGE: quay.io/openshift/origin-telemeter
       AUTHORIZE_URL: https://api.openshift.com/api/accounts_mgmt/v1/cluster_registrations
