@@ -1,0 +1,10 @@
+services:
+- hash: 64a290d15a6274632af07c5dd553e1bc56febb06
+  name: telemeter-prometheus
+  path: /manifests/prometheus/list.yaml
+  url: https://github.com/openshift/telemeter
+  hash_length: 7
+  environments:
+  - name: production
+    parameters:
+      NAMESPACE: telemeter-production
