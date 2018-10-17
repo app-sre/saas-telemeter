@@ -1,7 +1,7 @@
 services:
 - hash: 61bd696f0271c44c5566668fd5b9a33fcfd482d3
   name: telemeter-server
-  path: /deploy/telemeter-server.yaml
+  path: /manifests/server/list.yaml
   url: https://github.com/openshift/telemeter
   hash_length: 7
   environments:
