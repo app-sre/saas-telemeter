@@ -1,0 +1,8 @@
+services:
+- name: telemeter-prometheus
+  path: /manifests/prometheus/list.yaml
+  url: https://github.com/openshift/telemeter
+  environments:
+  - name: production
+    parameters:
+      NAMESPACE: telemeter-production
