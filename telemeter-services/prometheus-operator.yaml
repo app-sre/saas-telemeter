@@ -8,5 +8,3 @@ services:
   - name: production
     parameters:
       IMAGE_TAG: v2.3.2
-      IMAGE: quay.io/openshift/origin-telemeter
-      AUTHORIZE_URL: https://api.openshift.com/api/accounts_mgmt/v1/cluster_registrations
