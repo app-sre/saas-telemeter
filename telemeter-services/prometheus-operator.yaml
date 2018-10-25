@@ -1,0 +1,11 @@
+services:
+- hash: 2f87cf149520c93e8ab41778e18cea3e8fddb2f8
+  name: prometheus-operator
+  path: /manifests/prometheus/list.yaml
+  url: https://github.com/openshift/telemeter
+  hash_length: 7
+  environments:
+  - name: production
+    parameters:
+      NAMESPACE: telemeter-production
+      IMAGE_TAG: v2.3.2
