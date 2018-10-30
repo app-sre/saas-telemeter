@@ -10,3 +10,6 @@ services:
       IMAGE: quay.io/openshift/origin-telemeter
       IMAGE_TAG: v4.0.0
       AUTHORIZE_URL: https://api.openshift.com/api/accounts_mgmt/v1/cluster_registrations
+  - name: staging
+    parameters:
+      IMAGE: quay.io/app-sre/telemeter
