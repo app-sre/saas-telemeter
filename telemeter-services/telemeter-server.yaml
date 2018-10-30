@@ -1,15 +1,8 @@
 services:
-- hash: 1ffafc8949db1d7af222a676edacc5238101e678
+- hash: 0d72336d394368d42aef39a492e852ca72d1eb74
   name: telemeter-server
   path: /manifests/server/list.yaml
   url: https://github.com/openshift/telemeter
   hash_length: 7
-  environments:
-  - name: production
-    parameters:
-      IMAGE: quay.io/openshift/origin-telemeter
-      IMAGE_TAG: v4.0.0
-      AUTHORIZE_URL: https://api.openshift.com/api/accounts_mgmt/v1/cluster_registrations
-  - name: staging
-    parameters:
-      IMAGE: quay.io/app-sre/telemeter
+  parameters:
+    IMAGE: quay.io/app-sre/telemeter
