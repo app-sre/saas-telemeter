@@ -9,3 +9,7 @@ services:
     parameters:
       NAMESPACE: telemeter-production
       IMAGE_TAG: v2.3.2
+  - name: staging
+    parameters:
+      NAMESPACE: telemeter-staging
+      IMAGE_TAG: v2.3.2
