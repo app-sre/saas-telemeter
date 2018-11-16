@@ -1,5 +1,5 @@
 services:
-- hash: a5e12773dce084af92752ebbdf9b2807b1205535
+- hash: 6582e721f21fa21b2593cdc131857f858082d826
   name: prometheus-telemeter
   path: /manifests/prometheus/list.yaml
   url: https://github.com/openshift/telemeter
@@ -8,8 +8,8 @@ services:
   - name: production
     parameters:
       NAMESPACE: telemeter-production
-      IMAGE_TAG: v2.3.2
+      PROMETHEUS_IMAGE_TAG: v2.3.2
   - name: staging
     parameters:
       NAMESPACE: telemeter-staging
-      IMAGE_TAG: v2.3.2
+      PROMETHEUS_IMAGE_TAG: v2.3.2
