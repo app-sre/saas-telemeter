@@ -1,5 +1,5 @@
 services:
-- hash: ac67628fab155d27d684f83fcb23df3c9870aa8c
+- hash: ba7ac3556dddd46cdcb0de6834d027e6af94e6de
   name: prometheus-telemeter
   path: /manifests/prometheus/list.yaml
   url: https://github.com/openshift/telemeter
