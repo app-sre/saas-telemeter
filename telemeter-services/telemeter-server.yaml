@@ -11,5 +11,5 @@ services:
       IMAGE: quay.io/app-sre/telemeter
   - name: staging
     parameters:
-      NAMESPACE: telemeter-staging
+      NAMESPACE: telemeter-stage
       IMAGE: quay.io/app-sre/telemeter
