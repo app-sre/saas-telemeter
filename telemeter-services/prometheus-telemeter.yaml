@@ -11,5 +11,5 @@ services:
       PROMETHEUS_IMAGE_TAG: v2.3.2
   - name: staging
     parameters:
-      NAMESPACE: telemeter-stage
+      NAMESPACE: telemeter-staging
       PROMETHEUS_IMAGE_TAG: v2.3.2
