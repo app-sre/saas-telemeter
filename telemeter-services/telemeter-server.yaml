@@ -1,5 +1,5 @@
 services:
-- hash: 0f39a2a115b64b4a795b10297fbbc614c92964b5
+- hash: cff122183d87bde0ed6245ba16f3d2331c542d62
   name: telemeter-server
   path: /manifests/server/list.yaml
   url: https://github.com/openshift/telemeter
