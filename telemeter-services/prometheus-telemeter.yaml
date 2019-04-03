@@ -9,7 +9,15 @@ services:
     parameters:
       NAMESPACE: telemeter-production
       PROMETHEUS_IMAGE_TAG: v2.3.2
+      #PROMETHEUS_CPU_REQUEST: 100m
+      #PROMETHEUS_CPU_LIMIT: 1
+      #PROMETHEUS_MEMORY_REQUEST: 500Mi
+      #PROMETHEUS_MEMORY_LIMIT: 8Gi
   - name: staging
     parameters:
       NAMESPACE: telemeter-stage
       PROMETHEUS_IMAGE_TAG: v2.3.2
+      PROMETHEUS_CPU_REQUEST: 100m
+      PROMETHEUS_CPU_LIMIT: 1
+      PROMETHEUS_MEMORY_REQUEST: 500Mi
+      PROMETHEUS_MEMORY_LIMIT: 8Gi
