@@ -10,8 +10,16 @@ services:
       NAMESPACE: telemeter-production
       IMAGE: quay.io/app-sre/telemeter
       AUTHORIZE_URL: https://api.openshift.com/api/accounts_mgmt/v1/cluster_registrations
+      TELEMETER_SERVER_CPU_REQUEST: 100m
+      TELEMETER_SERVER_CPU_LIMIT: 1
+      TELEMETER_SERVER_MEMORY_REQUEST: 100Mi
+      TELEMETER_SERVER_MEMORY_LIMIT: 1Gi
   - name: staging
     parameters:
       NAMESPACE: telemeter-stage
       IMAGE: quay.io/app-sre/telemeter
       AUTHORIZE_URL: https://api.stage.openshift.com/api/accounts_mgmt/v1/cluster_registrations
+      TELEMETER_SERVER_CPU_REQUEST: 100m
+      TELEMETER_SERVER_CPU_LIMIT: 1
+      TELEMETER_SERVER_MEMORY_REQUEST: 100Mi
+      TELEMETER_SERVER_MEMORY_LIMIT: 1Gi
