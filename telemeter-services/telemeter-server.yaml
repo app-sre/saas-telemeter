@@ -1,5 +1,5 @@
 services:
-- hash: efc4bdd10d6fa8b790e8d948ea952c2931dc70bd
+- hash: 840769153a19d8dfd292202286224388e4ffa6c9
   name: telemeter-server
   path: /manifests/server/list.yaml
   url: https://github.com/openshift/telemeter
@@ -10,10 +10,10 @@ services:
       NAMESPACE: telemeter-production
       IMAGE: quay.io/app-sre/telemeter
       AUTHORIZE_URL: https://api.openshift.com/api/accounts_mgmt/v1/cluster_registrations
-      #TELEMETER_SERVER_CPU_REQUEST: 100m
-      #TELEMETER_SERVER_CPU_LIMIT: 1
-      #TELEMETER_SERVER_MEMORY_REQUEST: 100Mi
-      #TELEMETER_SERVER_MEMORY_LIMIT: 1Gi
+      TELEMETER_SERVER_CPU_REQUEST: 100m
+      TELEMETER_SERVER_CPU_LIMIT: 1
+      TELEMETER_SERVER_MEMORY_REQUEST: 100Mi
+      TELEMETER_SERVER_MEMORY_LIMIT: 1Gi
   - name: staging
     parameters:
       NAMESPACE: telemeter-stage
